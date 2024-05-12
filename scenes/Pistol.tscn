@@ -6,4 +6,4 @@
 [node name="Pistol" type="Node"]
 script = ExtResource("1_ontsh")
 ammo = ExtResource("2_eyr3x")
-reloadTime = null
+reloadTime = 0.5

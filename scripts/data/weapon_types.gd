@@ -1,4 +1,4 @@
-class_name Weapons
+class_name WeaponTypes
 
 const Database = {
 	"pistol": {

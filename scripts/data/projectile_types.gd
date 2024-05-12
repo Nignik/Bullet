@@ -1,4 +1,4 @@
-class_name Projectiles
+class_name ProjectileTypes
 
 const Database = {
 	"bullet": {
