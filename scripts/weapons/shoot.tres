@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="DefaultShot" load_steps=2 format=3 uid="uid://c0kr4byq1q5uy"]
+
+[ext_resource type="Script" path="res://scripts/weapons/DefaultShot.gd" id="1_2x4ii"]
+
+[resource]
+script = ExtResource("1_2x4ii")
+projectileAmount = 1

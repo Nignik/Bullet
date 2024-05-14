@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqcd053kc22of"]
+[gd_scene load_steps=6 format=3 uid="uid://cqcd053kc22of"]
 
 [ext_resource type="PackedScene" uid="uid://b1g7prw4khd0u" path="res://scenes/WeaponPickup.tscn" id="3_jb134"]
 [ext_resource type="PackedScene" uid="uid://c5dgley1jojj5" path="res://scenes/Player_1.tscn" id="3_yp2nt"]
+[ext_resource type="Resource" uid="uid://c6mu8rkg6g444" path="res://scripts/data/Pistol.tres" id="4_l8ycs"]
 [ext_resource type="PackedScene" uid="uid://cnuq40fjpxcxc" path="res://scenes/Player_2.tscn" id="4_x04ht"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_nc4hm"]
@@ -17,10 +18,8 @@ collision_layer = 16
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Separator"]
+position = Vector2(-16, 0)
 shape = SubResource("SegmentShape2D_nc4hm")
-
-[node name="WeaponPickup" parent="." instance=ExtResource("3_jb134")]
-position = Vector2(-174, -38)
 
 [node name="Players" type="Node" parent="."]
 
@@ -30,5 +29,12 @@ position = Vector2(-1, 204)
 [node name="Player2" parent="Players" instance=ExtResource("4_x04ht")]
 position = Vector2(-6, -133)
 
-[node name="WeaponPickup2" parent="." instance=ExtResource("3_jb134")]
+[node name="Pickups" type="Node" parent="."]
+
+[node name="WeaponPickup" parent="Pickups" instance=ExtResource("3_jb134")]
+position = Vector2(-174, -38)
+weaponBlueprint = ExtResource("4_l8ycs")
+
+[node name="WeaponPickup2" parent="Pickups" instance=ExtResource("3_jb134")]
 position = Vector2(-164, 119)
+weaponBlueprint = ExtResource("4_l8ycs")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollisionSetter" load_steps=2 format=3 uid="uid://djai7kptuy0mn"]
+
+[ext_resource type="Script" path="res://scripts/movement/CollisionSetter.gd" id="1_y1qad"]
+
+[resource]
+script = ExtResource("1_y1qad")
+projectileLayers_1 = Array[int]([1])
+projectileMasks_1 = Array[int]([2])
+projectileLayers_2 = Array[int]([2])
+projectileMasks_2 = Array[int]([1])
+playerLayers_1 = Array[int]([1])
+playerMasks_1 = Array[int]([2, 3, 5])
+playerLayers_2 = Array[int]([2])
+playerMasks_2 = Array[int]([1, 3, 4, 5])

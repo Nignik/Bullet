@@ -16,10 +16,8 @@ func _ready():
 	else:
 		movement = MovementSchemes.Database["arrows"]
 
-func PickUpWeapon(weapon_id:String):
-	print("I got a ", WeaponTypes.Database[weapon_id].name)
-	var weaponScene = load(WeaponTypes.Database[weapon_id].scene)
-	weapon = weaponScene.instantiate()
+func PickUpWeapon(weaponBlueprint: WeaponBlueprint):
+	weapon = weaponBlueprint.scene.instantiate()
 	add_child(weapon)
 	
 func ShootWeapon():
